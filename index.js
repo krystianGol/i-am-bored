@@ -22,6 +22,23 @@ app.get("/", async (req, res) => {
     }
 })
 
+app.post("/", async (req, res) => {
+    let type = req.body["type"];
+    let participants = req.body["participants"];
+    const url = `https://bored-api.appbrewery.com/filter?type=${type}&participants=${participants}`;
+    try {
+        const response = await axios.get(url);
+        const result = response.data;
+        const activityIndex = Math.floor(Math.random() * result.length);
+        const activity = result[activityIndex];
+        res.render("index.ejs", { data: activity });
+    } catch (error) {
+        console.error("Failed to make request:", error.message);
+        res.render("index.ejs", {
+            error: "No activities that match your criteria.",
+        });
+    }
+})
 
 app.listen(port, () => {
     console.log(`Listening on port ${port}`);

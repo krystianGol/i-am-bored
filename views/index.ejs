@@ -14,7 +14,7 @@
         <h2>Let's find something for you to do ✌️</h2>
         <div>
             <form action="/" method="POST" class="form-container">
-                <select name="Type" class="select">
+                <select name="type" class="select">
                     <option value="" data-display="Select">Random type</option>
                     <option value="education">Education</option>
                     <option value="charity">Charity</option>
@@ -50,7 +50,7 @@
                 </div>
                 <% } else { %>
                     <div class="error">
-                        <p>There is no activity</p>
+                        <%= error %>
                     </div>
                     <% } %>
         </div>
