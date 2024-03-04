@@ -1,1 +1,49 @@
-<h1>Hello world !</h1>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>I'am bored</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Are you bored ? 🥱</h1>
+        <h2>Let's find something for you to do ✌️</h2>
+        <div>
+            <form action="/" method="POST" class="form-container">
+                <select name="Type" class="select">
+                    <option value="" data-display="Select">Random type</option>
+                    <option value="education">Education</option>
+                    <option value="charity">Charity</option>
+                    <option value="recreational">Recreational</option>
+                    <option value="relaxation">Relaxation</option>
+                    <option value="busywork">Busywork</option>
+                    <option value="social">Social</option>
+                    <option value="diy">DIY</option>
+                    <option value="music">Music</option>
+                </select>
+                <select name="participants" class="select">
+                    <option value="">Any number of people</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <button type="submit" class="submit-button">Find Out</button>
+            </form>
+            <div class="card">
+                <h3>Acitivity name</h3>
+                <p>activity body</p>
+                <div class="type-and-participants-container">
+                    <p>Education</p>
+                    <p>1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
