@@ -34,14 +34,25 @@
                 </select>
                 <button type="submit" class="submit-button">Find Out</button>
             </form>
-            <div class="card">
-                <h3>Acitivity name</h3>
-                <p>activity body</p>
-                <div class="type-and-participants-container">
-                    <p>Education</p>
-                    <p>1</p>
+            <% if (locals.data) { %>
+                <div class="card">
+                    <h3>
+                        <%= data.activity %>
+                    </h3>
+                    <div class="type-and-participants-container">
+                        <p>
+                            <%= data.type %>
+                        </p>
+                        <p>
+                            <%= data.participants %>
+                        </p>
+                    </div>
                 </div>
-            </div>
+                <% } else { %>
+                    <div class="error">
+                        <p>There is no activity</p>
+                    </div>
+                    <% } %>
         </div>
     </div>
 </body>
