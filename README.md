@@ -5,8 +5,8 @@ With this simple web app you can find something intrested to do when you are bor
 - Open up your code editor e.g. Visual Studio Code
 - Change direction in your terminal to project folder
 - In command line type **"npm i"** and then **"nodemon index.js"**
-- Now in your browser type **"http://localhost:3000/"**
-- Now find something for you with **IAmBored**
+- In your browser type **"http://localhost:3000/"**
+- Find something for you with **IAmBored**
 
 ## Let's see app 👇👇👇
 
